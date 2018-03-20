@@ -1,40 +1,81 @@
 /* custom styles */
 body, html {
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 /* The hero image */
 .hero-image {
     /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1502209524164-acea936639a2?ixlib=rb-0.3.5&s=6a8aeb4cf4c974398d5a3f7e3d2af7e5&auto=format&fit=crop&w=1500&q=80");
+    background-image: url("../imgs/Hero-background-low-slope.png");
 
-    /* Set a specific height */
-    height: 50%;
+    /* Set a specific height and width*/
+    height: 90%;
 
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-/* Place text in the middle of the image */
+/* Place text on the left of the image */
 .hero-text {
-    text-align: center;
+    /* text-align: left;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    top: 40%;
+    left: 30%;
+    transform: translate(-30%, -30%); */
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 110px 100px;
+    margin: 0 auto;
+    max-width: 880px;
 }
-.nav {
+.hero-text h1 {
+  font-size: 2em;
+}
 
+/* Add a dark background color with a little bit see-through */
+.navbar {
+    margin: 0 auto;
+    padding-top: 20px;
+    border: 0;
+    font-size: 16px !important;
+    letter-spacing: 4px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 880px;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #ffffff !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #ffffff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #ffffff !important;
 }
 
 .my-work {
 
 }
 
-.Contact {
-  
+.contact {
+
+}
+
+.container-fluid {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 880px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>First Training</title>
+  <title>David Thayer</title>
   <!-- meta -->
   <meta charset="utf-8" />
   <meta name="description" content="David Thayer">
@@ -10,27 +10,81 @@
   <!-- mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- styles -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- scripts -->
   <script type="text/javascript" src="assets/js/app.js"></script>
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+  <link rel="icon" type="image/png" href="./assets/imgs/favicon.png">
 </head>
 <body>
   <div class="hero-image">
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <!-- <div class="container-fluid"> -->
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+      <a class="navbar-brand" href="#"><img src="./assets/imgs/logo-dt-github.png"></a>
+    </div>
+    <div class="navbar-header" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#band">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  <!-- </div> -->
+</nav>
   <div class="hero-text">
     <h1>David Thayer</h1>
-    <p>I like people, products and people using products</p>
-    <p><a href="https://linkedin.com/in/davidthayer">Here's what I've been up to.</a></p>
-      <button>Say hi!</button>
+    <p>I like people, products and people that build them.</p>
+    <a href="https://linkedin.com/in/davidthayer"><button class="btn-primary"><i class="fab fa-linkedin-in"></i> let's connect</button></a>
   </div>
 </div>
-  <div class"my-work">
-    <h1>My Work</h1>
+
   </div>
-  <div class="contact">
-    <h1>Get in touch</h1>
+  <div class="container-fluid">
+    <h1>Work</h1>
+    <div class="row">
+    <div class="col-sm-5" text-align=center>
+      <p>"David wasn't the <i>worst</i> boss I've had."</p>
+      <p>- Gina</p>
+  </div>
+
+  <div class="container-fluid">
+    <h1>Contact</h1>
+    <div class="row">
+    <div class="col-sm-5">
+      <p>Let's get in touch.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Oakland, CA</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> david.thayer@gmail.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
   </div>
 
 </body>
