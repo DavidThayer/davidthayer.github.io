@@ -5,6 +5,10 @@ body, html {
 
 }
 
+li {
+  margin-right: 20px;
+}
+
 /* The hero image */
 .hero-image {
     /* The image used */
@@ -18,6 +22,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    /* z-index: -1; */
 }
 
 /* Place text on the left of the image */
@@ -50,6 +55,10 @@ body, html {
     max-width: 880px;
 }
 
+.navbar-nav {
+  flex-direction: row;
+}
+
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
     color: #ffffff !important;
@@ -70,7 +79,7 @@ body, html {
 }
 
 .contact {
-
+  padding: 30px;
 }
 
 .container-fluid {
